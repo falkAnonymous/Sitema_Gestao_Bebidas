@@ -74,8 +74,7 @@ namespace Quick_Drinks.ControleUsuario
 
         }
 
+
         #endregion
-
-
     }
 }
