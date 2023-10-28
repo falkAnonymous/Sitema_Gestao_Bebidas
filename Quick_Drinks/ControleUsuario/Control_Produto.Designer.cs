@@ -61,29 +61,30 @@
             // 
             // lbl_Nome
             // 
-            this.lbl_Nome.Location = new System.Drawing.Point(5, 123);
+            this.lbl_Nome.Location = new System.Drawing.Point(3, 123);
             this.lbl_Nome.Name = "lbl_Nome";
-            this.lbl_Nome.Size = new System.Drawing.Size(93, 22);
+            this.lbl_Nome.Size = new System.Drawing.Size(98, 22);
             this.lbl_Nome.TabIndex = 1;
             this.lbl_Nome.Text = "Nome";
             // 
             // lbl_Quantidade
             // 
-            this.lbl_Quantidade.Location = new System.Drawing.Point(88, 123);
+            this.lbl_Quantidade.Location = new System.Drawing.Point(119, 123);
             this.lbl_Quantidade.Name = "lbl_Quantidade";
-            this.lbl_Quantidade.Size = new System.Drawing.Size(107, 22);
+            this.lbl_Quantidade.Size = new System.Drawing.Size(76, 22);
             this.lbl_Quantidade.TabIndex = 2;
             this.lbl_Quantidade.Text = "Quantidade";
             this.lbl_Quantidade.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lbl_Preco
             // 
-            this.lbl_Preco.Location = new System.Drawing.Point(66, 159);
+            this.lbl_Preco.Location = new System.Drawing.Point(29, 159);
             this.lbl_Preco.Name = "lbl_Preco";
-            this.lbl_Preco.Size = new System.Drawing.Size(58, 24);
+            this.lbl_Preco.Size = new System.Drawing.Size(138, 24);
             this.lbl_Preco.TabIndex = 3;
             this.lbl_Preco.Text = "Valor";
             this.lbl_Preco.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Preco.Click += new System.EventHandler(this.lbl_Preco_Click);
             // 
             // panel1
             // 

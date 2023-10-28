@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Quick_Drinks.Janelas;
-using System.Runtime.CompilerServices;
-using Microsoft.VisualBasic;
+using Quick_Drinks.Janelas.PastProduto.CadastroProduto.Pedido_Client;
+using Quick_Drinks.Entidades;
+
 
 namespace Quick_Drinks
 {
@@ -66,12 +61,12 @@ namespace Quick_Drinks
             if (this.WindowState == FormWindowState.Maximized)
             {
                 this.WindowState = FormWindowState.Normal;
-                
+
             }
             else
             {
                 this.WindowState = FormWindowState.Maximized;
-               
+
             }
 
         }
@@ -113,16 +108,15 @@ namespace Quick_Drinks
 
         private void btn_Inicio_Click(object sender, EventArgs e)
         {
-            produtos.TopLevel = false; // Não autoriza ele ficar na frente da aplicação principal
-            produtos.Dock = DockStyle.Fill; // Avisa que ele ira prencheer todo o campo dentro do panel
-            panelConteudos.Controls.Clear(); // Limpa a ultima janela anterior
-            panelConteudos.Controls.Add(produtos);// adicionar o janela dentro do panel
-            produtos.Show(); // Chama a visualização da janela  dentro do panel
-            
+            ShowFormsWindows showForms = new ShowFormsWindows(produtos, panelConteudos);
         }
 
-        private void panelMenuLateral_Paint(object sender, PaintEventArgs e)
+
+        private void btn_Configuracao_Click(object sender, EventArgs e)
         {
+            Pedido pedido = new Pedido();
+            ShowFormsWindows showForms = new ShowFormsWindows(pedido, panelConteudos);
+
 
         }
     }

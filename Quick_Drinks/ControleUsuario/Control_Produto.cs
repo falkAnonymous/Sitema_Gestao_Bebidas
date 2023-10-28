@@ -33,7 +33,7 @@ namespace Quick_Drinks.ControleUsuario
             set
             {
                 _Iprodutos = value;
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
                 pictureBox1.Image = _Iprodutos;
             }
         }
@@ -68,7 +68,7 @@ namespace Quick_Drinks.ControleUsuario
             set
             {
                 _Valor = value;
-                lbl_Preco.Text = _Valor.ToString("C", new CultureInfo("pt-BR"));
+                lbl_Preco.Text = _Valor.ToString("C", new CultureInfo("Pt-BR"));
             }
 
 
@@ -76,5 +76,10 @@ namespace Quick_Drinks.ControleUsuario
 
 
         #endregion
+
+        private void lbl_Preco_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

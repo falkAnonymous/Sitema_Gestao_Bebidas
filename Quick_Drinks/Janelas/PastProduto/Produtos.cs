@@ -14,7 +14,7 @@ namespace Quick_Drinks.Janelas
 {
     public partial class Produtos : Form
     {
-        Cadastro_Produto cadProd = new Cadastro_Produto();
+        Cadastro_Produto cadProd;
 
         public Produtos()
         {
@@ -25,18 +25,16 @@ namespace Quick_Drinks.Janelas
         {
             if (!IsFormOpen("Cadastro_Produto"))
             {
-                cadProd = new Cadastro_Produto();
+                cadProd = new Cadastro_Produto(listaProdutosVisual);
                 cadProd.TopLevel = true;
                 cadProd.ShowDialog();
             }
-            else
-            {
-                MessageBox.Show("O formulário Cadastro_Produto já está aberto.");
-            }
+           
 
 
         }
 
+        #region Validador Janelas Abertas
 
         public bool IsFormOpen(string formName)
         {
@@ -48,6 +46,18 @@ namespace Quick_Drinks.Janelas
                 }
             }
             return false;
+
+            //else
+            //{
+            //    MessageBox.Show("O formulário Cadastro_Produto já está aberto.");
+            //}
+
+        }
+        #endregion
+
+        private void listaProdutosVisual_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

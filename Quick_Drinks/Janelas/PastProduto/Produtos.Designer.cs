@@ -84,9 +84,9 @@
             // 
             this.controleProduto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.controleProduto.Dock = System.Windows.Forms.DockStyle.Right;
-            this.controleProduto.Location = new System.Drawing.Point(564, 0);
+            this.controleProduto.Location = new System.Drawing.Point(598, 0);
             this.controleProduto.Name = "controleProduto";
-            this.controleProduto.Size = new System.Drawing.Size(108, 572);
+            this.controleProduto.Size = new System.Drawing.Size(74, 572);
             this.controleProduto.TabIndex = 1;
             // 
             // listaProdutosVisual
@@ -95,8 +95,9 @@
             this.listaProdutosVisual.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listaProdutosVisual.Location = new System.Drawing.Point(151, 0);
             this.listaProdutosVisual.Name = "listaProdutosVisual";
-            this.listaProdutosVisual.Size = new System.Drawing.Size(413, 572);
+            this.listaProdutosVisual.Size = new System.Drawing.Size(447, 572);
             this.listaProdutosVisual.TabIndex = 2;
+            this.listaProdutosVisual.Paint += new System.Windows.Forms.PaintEventHandler(this.listaProdutosVisual_Paint);
             // 
             // Produtos
             // 

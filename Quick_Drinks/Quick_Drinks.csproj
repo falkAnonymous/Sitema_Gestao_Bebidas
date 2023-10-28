@@ -65,6 +65,7 @@
     <Compile Include="ControleUsuario\Control_Produto.Designer.cs">
       <DependentUpon>Control_Produto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entidades\ShowFormsWindows.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +77,12 @@
     </Compile>
     <Compile Include="Janelas\PastProduto\CadastroProduto\Cadastro_Produto.Designer.cs">
       <DependentUpon>Cadastro_Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janelas\PastProduto\Pedido_Client\Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Janelas\PastProduto\Pedido_Client\Pedido.Designer.cs">
+      <DependentUpon>Pedido.cs</DependentUpon>
     </Compile>
     <Compile Include="Janelas\PastProduto\Produtos.cs">
       <SubType>Form</SubType>
@@ -93,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Janelas\PastProduto\CadastroProduto\Cadastro_Produto.resx">
       <DependentUpon>Cadastro_Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Janelas\PastProduto\Pedido_Client\Pedido.resx">
+      <DependentUpon>Pedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Janelas\PastProduto\Produtos.resx">
       <DependentUpon>Produtos.cs</DependentUpon>

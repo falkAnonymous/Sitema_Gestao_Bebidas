@@ -162,7 +162,7 @@
             this.btn_Sobre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Sobre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Sobre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Sobre.Font = new System.Drawing.Font("Pacifico", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Sobre.Font = new System.Drawing.Font("Pacifico", 14.25F);
             this.btn_Sobre.ForeColor = System.Drawing.Color.White;
             this.btn_Sobre.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sobre.Image")));
             this.btn_Sobre.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -229,6 +229,7 @@
             this.btn_Configuracao.TabIndex = 3;
             this.btn_Configuracao.Text = "Configuração";
             this.btn_Configuracao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Configuracao.Click += new System.EventHandler(this.btn_Configuracao_Click);
             // 
             // siticonePanel6
             // 
@@ -308,7 +309,6 @@
             this.panelMenuLateral.Name = "panelMenuLateral";
             this.panelMenuLateral.Size = new System.Drawing.Size(50, 820);
             this.panelMenuLateral.TabIndex = 1;
-            this.panelMenuLateral.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenuLateral_Paint);
             // 
             // panelConteudos
             // 
